@@ -1,0 +1,16 @@
+
+    <input type="text" [(ngModel)]="test_value">
+    
+    <!--Planning to bind the test value with an obnservable-->
+    <div *ngIf="test_value < 50; else greaterblock">
+
+        Less than 50
+    </div>
+
+    <ng-template #greaterblock>
+        <p> More than 50</p>
+    </ng-template>
+
+    <button type="button" (click)="sayMessage()">
+        Change to 100
+    </button>

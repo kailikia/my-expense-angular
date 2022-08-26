@@ -1,0 +1,11 @@
+<p>{{expense_string}} expense works! </p>
+
+<ul>
+  <div *ngFor="let exp of expenses">
+      <li>
+        {{ exp.id}} - {{ exp.name}}-{{ exp.amount}}-
+        {{ exp.category}}-{{ exp.date}}
+      </li>
+  </div>
+
+</ul>
